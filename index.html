@@ -1,82 +1,64 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="zh-cn">
+
 <head>
-    <meta charset="UTF-8">
-    <title>清泽心雨招新页面</title>
-    <style>
-         *{
-            padding: 0;
-            margin: 0;
-            font-size: 20px;
-            background-color: lightblue;
-        }
-        form{
-            width:700px;
-            margin:220px auto;
-            padding:10px;
-            border: thin none;
-            border-radius: 20px;
-            background:white;
-            box-shadow:white 0 0 15px 1px;
-        }
-        form div,input,label,table,td{
-            background-color: #FFFFFF;
-        }
-        table{
-            width:700px;
-        }
-        #submitButton{
-            position:relative;
-            width:10%;
-            height:35px;
-            margin:10px 0;
-            border:none;
-            border-radius:4px;
-            font-size:16px;
-            padding-left:5px;
-            box-sizing:border-box;
-        }
-        .button{
-            border: thin none;
-            border-radius: 20px;
-        }
-    </style>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="./index.css"/>
 </head>
+
 <body>
-<form>
-    <div align="center">申请表</div>
-    <table align="center">
-        <div>
-            <tr height="60">
-                <td><div>姓名：<input type="text" placeholder="请输入用户名" autofocus autocomplete="on"/></div></td>
-                <td><div id="sex"> 性别：
-                    <label for="sex1"><input type="radio" name="sex" id="sex1"/>男</label>
-                    <label for="sex2"><input type="radio" name="sex" id="sex2"/>女</label>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td><div>电话：<label>
-                    <input type="tel" required pattern="\{11}">
-                </label></div></td>
-                <td><div>邮箱：<input type="email" multiple placeholder="多个邮箱用逗号分隔"></div></td>
-            </tr>
-            <tr>
-                <td><div>志愿：
-                        <select>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                        </select>
-                    </div>
-                </td>
-            </tr>
-        </div>
-    </table>
-    <div style="text-align: center;">
-        <input type="submit" id="submitButton" class="button" value="提交"/>
+<div id="balloon-left"></div>
+<div id="balloon-right"></div>
+<form method="post">
+    <div id="block">
+        <label>姓名：<input class="small" type="text" placeholder="姓名"/></label>
+        <label>性别：<input class="small" type="text" placeholder="性别"/></label>
+        <label>专业：<input class="small" type="text" placeholder="专业"/></label>
+        <label>班级：<input class="small" type="text" placeholder="班级"/></label>
+        <label>电话：<input class="long" type="text" placeholder="电话"/></label>
     </div>
+
+    <input type="file" id="file">
+    <label for="file" id="icons">
+        <div class="p">
+            <p>照片</p>
+        </div>
+        <img src="./src/icons.png" alt="插入头像"/>
+    </label>
+    <div> <!--style="margin-top:-65px "-->
+        <label>志愿：
+            <select>
+                <option value="select1">综合办公室</option>
+                <option value="select2">公关策划部</option>
+                <option value="select3">网络安全部(蓝之青)</option>
+                <option value="select4">视觉设计部(卡乐坊)</option>
+                <option value="select5">技术开发部(ued)</option>
+                <option value="select6">综合媒体集团</option>
+                <option value="select7">新闻集团</option>
+                <option value="select8">视频集团</option>
+            </select>
+            <span></span>
+        </label>
+        <label>
+            <select>
+                <option value="select1">综合办公室</option>
+                <option value="select2">公关策划部</option>
+                <option value="select3">网络安全部(蓝之青)</option>
+                <option value="select4">视觉设计部(卡乐坊)</option>
+                <option value="select5">技术开发部(ued)</option>
+                <option value="select6">综合媒体集团</option>
+                <option value="select7">新闻集团</option>
+                <option value="select8">视频集团</option>
+            </select>
+        </label>
+        <span></span>
+    </div>
+
+    <label for="reason" style="text-align: center;display: block; ">填报理由</label>
+    <input class="box" type="text" id="reason" placeholder="请输入填报理由..."/>
+    <input type="submit" value="完成" id="submit">
 </form>
 </body>
+
 </html>
