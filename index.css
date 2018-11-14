@@ -98,6 +98,7 @@ select {
     appearance: none;
     height: 40px;
     width: 43%;
+    background-color: white;
 }
 
 span {
