@@ -1,11 +1,11 @@
-div, form, label, input, #block, .frame, a, canvas, img, p, #file, select, option, #submit {
+div, form, label, input, #block, .frame, a, canvas, img, p, #file, select, option, #submit,textarea {
     margin: 0;
     padding: 0;
     border: 0;
     font-size: 24px;
     font-family: "SimHei";
     vertical-align: baseline;
-    -webkit-user-select: none; // 取消选中样式
+    -webkit-user-select: none; /*取消选中样式*/
 
 }
 
@@ -67,7 +67,7 @@ form {
     width: 550px;
 }
 
-input, select, option {
+input, select, option, textarea {
     text-indent: 25px;
     border-radius: 25px;
     border: none;
@@ -116,6 +116,7 @@ span {
 #file {
     width: 0;
     height: 0;
+    display: none;
 }
 
 .p {
@@ -152,12 +153,13 @@ img {
 }
 
 #submit {
-    display: block;
     background: linear-gradient(to top, #55a8f2, #50b5f5);
     width: 150px;
     height: 54px;
     box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.35);
     border-radius: 0;
-    margin: auto;
+    margin: 0 auto;
     text-align: center;
+    display: table-cell;
+    vertical-align:middle;
 }
