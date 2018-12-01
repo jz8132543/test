@@ -18,6 +18,17 @@ div, form, label, input, #block, .frame, a, canvas, img, p, #file, select, optio
     src: url(./src/MWFMDL2.ttf);
 }
 
+.header {
+  font-size: 55px;
+  font-weight: 400 ;
+  color: #ffffff;
+  weight: 484px;
+  height: 60px;
+  margin-left: 290px;
+  margin-top: 92px;
+  font-style: italic;
+}
+
 body {
     background: url(./src/background.png) no-repeat scroll;
     position: fixed;
@@ -55,7 +66,7 @@ form {
     width: 830px;
     padding: 40px;
     background-color: rgba(255, 255, 255, 0.2);
-    margin: 210px auto auto;
+    margin: 80px auto auto;
     border-radius: 5px;
     border-color: rgba(255,255,255,0.5);
     z-index: 3;
